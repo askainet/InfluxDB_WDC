@@ -40,7 +40,7 @@
 
   function influx_escape_char_for_URI(str) {
     var newStr = str.replace(/\\/g, '\\\\');
-    newStr = newStr.replace(/\//g, '//');
+    // newStr = newStr.replace(/\//g, '//');
     newStr = newStr.replace(/ /g, '%20');
     newStr = newStr.replace(/"/g, '\\"');
     return newStr;
